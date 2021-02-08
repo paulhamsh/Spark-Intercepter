@@ -6,8 +6,8 @@ This is a basic version that doesn't convert the data to meaningful commands - b
 
 # Setup
 
-The ESP 32 board (in this case a M5Stack Core 2) runs the Spark    .ino program and is connected to the PC via the USB-C serial cable
-The PC runs the python 3 program.
+The ESP 32 board (in this case a M5Stack Core 2) runs the Spark_Server_Core_USB_1.ino program and is connected to the PC via the USB-C serial cable
+The PC runs the python 3 program SparkSpoofer2.py.
 
 Steps:
 
@@ -22,3 +22,6 @@ Run the python
 On the app, try to connect
 
 Turn knobs, change effects, see data scroll by...
+
+# Note
+Currently this works for everything apart from the app retrieving the preset information from the amp - this traffic is blocked by the python program. For some reason that traffic causes the app to crash. Perhaps there is a checksum in there that is not ok, or something timing sensitive - but allowing the app -> amp and amp -> app traffic for a preset retrieve does not currently work. This means the amp doesn't have details of the hardware presets to select them.
