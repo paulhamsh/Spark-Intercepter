@@ -2,8 +2,6 @@
 
 Uses an ESP32 board (running C++ program) and a PC (running python 3) to intercept traffic from the Spark app to the Amp and back.   
 
-This is a basic version that doesn't convert the data to meaningful commands - but that is a next step based on the communication protocol documentation and other programs in this github.   
-
 It allows you to control the amp from the app, and also press 0-3 on your PC keyboard to select a preset - proving app, amp and other control methods can co-exist.   
 
 I use an esp32 and the PC because I haven't yet worked out how to make something connect to the amp via bluetooth but also look like the amp via bluetooth...   
