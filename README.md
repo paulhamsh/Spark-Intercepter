@@ -11,17 +11,17 @@ The PC runs the python 3 program SparkSpoofer2.py.
 
 Steps:
 
-Turn the amp off
-Power on the ESP 32 board
-On the android tablet / phone, pair to Spark 40 Audio (which is the ESP 32 board)
-Turn off the ESP 32 board
-Turn on the amp
-Connect the PC to the Spark amp via bluetooth
-Connect the ESP 32 board to the PC
-Run the python
-On the app, try to connect
+Turn the amp off   
+Power on the ESP 32 board   
+On the android tablet / phone, pair to Spark 40 Audio (which is the ESP 32 board)   
+Turn off the ESP 32 board   
+Turn on the amp   
+Connect the PC to the Spark amp via bluetooth   
+Connect the ESP 32 board to the PC   
+Run the python   
+On the app, try to connect   
 
-Turn knobs, change effects, see data scroll by...
+Turn knobs, change effects, see data scroll by...   
 
 # Note
 Currently this works for everything apart from the app retrieving the preset information from the amp - this traffic is blocked by the python program. For some reason that traffic causes the app to crash. Perhaps there is a checksum in there that is not ok, or something timing sensitive - but allowing the app -> amp and amp -> app traffic for a preset retrieve does not currently work. This means the amp doesn't have details of the hardware presets to select them.
