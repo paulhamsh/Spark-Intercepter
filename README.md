@@ -9,7 +9,7 @@ I use an esp32 and the PC because I haven't yet worked out how to make something
 # Setup
 
 The ESP 32 board (in this case a M5Stack Core 2) runs the Spark_Server_Core_USB_1.ino program and is connected to the PC via the USB-C serial cable
-The PC runs the python 4 program SparkSpoofer2.py.
+The PC runs the python program SparkSpoofer4.py.
 
 So the flow of information is:
 
